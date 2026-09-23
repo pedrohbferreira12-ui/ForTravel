@@ -1,0 +1,32 @@
+body {
+    background-color: #f0eadb;
+}
+
+header {
+    background-color: #072E4F;
+}
+
+nav {
+    width: 1357px;
+    margin: 10px auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F4F1E9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000b9;
+    text-decoration: underline;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+nav a:active {
+}
