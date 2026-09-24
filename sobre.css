@@ -4,29 +4,42 @@ body {
 
 header {
     background-color: #072E4F;
+    padding: 20px 0;
+}
+
+img {
+    width: 10%;
+    border-radius: 360px;
+}
+
+.caixa {
+    width: 1342px;
+    margin: 0 auto;
+    position: relative;
 }
 
 nav {
-    width: 1357px;
-    margin: 10px auto;
-    padding: 15px 0;
-    text-align: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
 nav a {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #F4F1E9;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #000000b9;
+    color:sienna;
     text-decoration: underline;
-    border: none;
-    border-radius: 8px;
-    padding: 5px;
 }
 
-nav a:active {
-}
+nav a:active {}
