@@ -1,45 +1,110 @@
 body {
-    background-color: #f0eadb;
+    background-color: #F4F1E9;
 }
 
 header {
+    width: 100%;
     background-color: #072E4F;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-img {
-    width: 10%;
-    border-radius: 360px;
+.imagemsimbolo {
+    width: 110px;
+    padding: 0 0 0 20px;
+}
+
+#titulo-principal {
+    font-size: 33px;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff4b4;
+    margin-right: 15px;
 }
 
 .caixa {
-    width: 1342px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     position: relative;
 }
 
 nav {
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 40px;
+    right: 40%;
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     margin: 0 0 0 15px;
 }
 
 nav a {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: bolder;
-    color: #F4F1E9;
+    color: #f0eadb;
     text-decoration: none;
-    text-transform: uppercase;
+    font-style: italic;
 }
 
 nav a:hover {
-    color:sienna;
+    color: sienna;
     text-decoration: underline;
 }
 
-nav a:active {}
+main {
+    width: 1342px;
+    margin: 30px 0;
+}
+
+.titulo-links-rodape {
+    font-weight: bold;
+    color: #f0eadb;
+}
+
+.titulo-contato-rodape {
+    font-weight: bold;
+    color: #f0eadb;
+    margin: 0 80px 0;
+    font-size: 18px;
+}
+
+.caixa3 {
+    display: inline-table;
+    margin: 0 50px 0;
+}
+
+section p {
+    color: #f0eadb;
+    margin: 20px 80px 0;
+}
+
+section a {
+    display: block;
+    color: #f0eadb;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section a:hover {
+    color: sienna;
+}
+
+.fraseefeito {
+    font-size: 18px;
+    color: #f0eadb;
+    font-style: italic;
+}
+
+.copy {
+    font-size: 14px;
+}
+
+footer {
+    border-top: solid #072E4F 2px;
+    background-color: #444444;
+    padding: 40px;
+}
