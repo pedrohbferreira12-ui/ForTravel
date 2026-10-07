@@ -8,7 +8,7 @@ body {
     padding: 0;
     width: 100%;
     max-width: 100%;
-    background-color: #9CB7D2;
+    background-color: #F3EEE8;
 }
 
 header {
@@ -69,17 +69,8 @@ main {
     max-width: 100%;
 }
 
-.imagemlogo {
-    width: 100%;
-    height: 45vw;
-    min-height: 400px;
-    max-height: 800px;
-    object-fit: cover;
-    display: block;
-}
-
 .historia {
-    padding: 3% 25%;
+    padding: 5%;
     background-color: #9CB7D2;
 }
 
@@ -92,26 +83,30 @@ section h2 {
     padding: 20px;
 }
 
+.sub-titulo-missao {
+    font-size: 37px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 5vw;
+}
+
 .paragrafo-historia {
     color: #000;
     font-size: 25px;
 }
 
 .missao {
-    padding: 10%;
+    padding: 5%;
     background-color: #F3EEE8;
 }
 
-section h3 {
-    font-size: 37px;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0 102px;
+.titulo-missao {
+    margin: 0 14vw;
 }
 
 .paragrafo-missao {
     color: #000;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -119,6 +114,31 @@ section h3 {
     color: #000;
     font-size: 27px;
     font-style: italic;
+}
+
+.imagem-divulgacao {
+    width: 16vw;
+    float: right;
+}
+
+.fundadores {
+    padding: 5%;
+    background-color: #F3EEE8;
+    clear: right;
+    display: grid;
+}
+
+.imagem-fundadores {
+    width: 55vw;
+    margin: auto;
+}
+
+.sub-titulo-fundadores {
+    font-size: 37px;
+}
+
+.paragrafo-fundadores {
+    display: inline-table;
 }
 
 .info-rodape {
@@ -146,7 +166,7 @@ section a:hover {
 
 section p {
     color: #F3EEE8;
-    margin: 1em 0 1em 100px;
+    margin: 1em 0 1em 5vw;
 }
 
 .fa-whatsapp {
