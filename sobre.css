@@ -21,13 +21,13 @@ header {
 }
 
 .imagemsimbolo {
-    width: 110px;
+    width: 15vw;
     margin: 0 0 0 200px;
     padding: 0;
 }
 
 #titulo-principal {
-    font-size: 33px;
+    font-size: 3.2em;
     text-decoration: none;
     font-style: italic;
     color: #fff4b4;
@@ -42,7 +42,7 @@ header {
 
 nav {
     position: absolute;
-    top: 40px;
+    top: 4.2vw;
     right: 15%;
 }
 
@@ -52,11 +52,10 @@ nav li {
 }
 
 nav a {
-    font-size: 27px;
+    font-size: 2em;
     color: #F3EEE8;
     text-decoration: none;
     font-style: italic;
-    font-family: serif;
 }
 
 nav a:hover {
@@ -76,23 +75,16 @@ main {
 
 section h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
     color: #000;
     font-style: italic;
-    font-family: 'Lucida Sans';
-    padding: 20px;
-}
-
-.sub-titulo-missao {
-    font-size: 37px;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0 5vw;
+    padding: 0.6em;
 }
 
 .paragrafo-historia {
     color: #000;
-    font-size: 25px;
+    font-size: 1.7em;
+    font-style: italic;
 }
 
 .missao {
@@ -101,18 +93,19 @@ section h2 {
 }
 
 .titulo-missao {
-    margin: 0 14vw;
+    margin: 0 14.4vw;
+    font-size: 2em;
+}
+
+.sub-titulo-missao {
+    font-size: 2.5em;
+    font-style: italic;
+    margin: 0 5vw;
 }
 
 .paragrafo-missao {
     color: #000;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.sub-paragrafo-missao {
-    color: #000;
-    font-size: 27px;
+    font-size: 1.7em;
     font-style: italic;
 }
 
@@ -121,24 +114,50 @@ section h2 {
     float: right;
 }
 
+
 .fundadores {
-    padding: 5%;
+    padding: 30px 5%;
     background-color: #F3EEE8;
-    clear: right;
-    display: grid;
+    text-align: center;
+}
+
+.fundadores h2 {
+    text-align: center;
+    margin: 1vw 14vw;
+    font-size: 2em;
 }
 
 .imagem-fundadores {
-    width: 55vw;
-    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
-.sub-titulo-fundadores {
-    font-size: 37px;
+.foto-fundadores {
+    display: block;
+    width: 55%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
-.paragrafo-fundadores {
-    display: inline-table;
+.fundadores-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 60px;
+    width: 70%;
+    max-width: 900px;
+    margin: 25px auto 0;
+}
+
+.fundador h3 {
+    font-size: 2em;
+    margin: 0 0 5px;
+}
+
+.fundador p {
+    font-size: 1.3em;
+    margin: 0;
+    color: #393532;
 }
 
 .info-rodape {
@@ -230,4 +249,15 @@ footer {
     position: relative;
     background-color: #1E2223;
     padding: 2% 0 1% 0;
+}
+
+@media (max-width: 600px) {
+    .fundadores-conteudo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .foto-fundadores {
+        width: 100%;
+    }
 }
