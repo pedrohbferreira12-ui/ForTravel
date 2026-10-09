@@ -160,6 +160,11 @@ section h2 {
     color: #393532;
 }
 
+.localizacao {
+    padding: 2vw 10vw;
+    background-color: #9CB7D2;
+}
+
 .info-rodape {
     display: inline-table;
 }
@@ -198,6 +203,12 @@ section p {
     font-size: 35px;
     color: #fff;
     margin: 0 5vw;
+}
+
+.icone-localizacao {
+    font-size: 33px;
+    color: #fff;
+    margin: 0 5.2vw;
 }
 
 .frase-efeito {
