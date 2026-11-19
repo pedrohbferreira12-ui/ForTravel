@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato · For Travel</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="brand">
+            <img src="./img/simbolo2_sem_fundo.png" alt="Logo For Travel: bússola, avião e mala de viagem">
+        </div>
+
+        <section>
+            <h1>Fale com a For Travel</h1>
+            <p class="lead">Conte para onde você quer ir e quando. Respondemos com um roteiro e valores.</p>
+
+            <ul class="info">
+                <li><b>E-mail</b><a href="mailto:contato@fortravel.com.br">for.travel.2021.04@gmail.com</a></li>
+                <li><b>WhatsApp</b><a href="https://wa.me/5511900000000">(11) 98176-5432</a></li>
+                <li><b>Atendimento</b>Segunda a sexta, 9h às 18h</li>
+            </ul>
+
+            <form id="f">
+                <label>Nome<input name="nome" required autocomplete="name"></label>
+                <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
+                <label>Sua viagem<textarea name="msg" required
+                        placeholder="Destino, datas e número de pessoas"></textarea></label>
+                <button type="submit">Enviar mensagem</button>
+                <p class="ok" id="ok" role="status"></p>
+            </form>
+
+            <a class="insta" href="https://instagram.com/fortravel" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"
+                    aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+                </svg>
+                Siga a gente no Instagram: @fortravel
+            </a>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('f').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var d = new FormData(e.target);
+            var corpo = 'Nome: ' + d.get('nome') + '\nE-mail: ' + d.get('email') + '\n\n' + d.get('msg');
+            location.href = 'mailto:contato@fortravel.com.br?subject=' +
+                encodeURIComponent('Contato pelo site – ' + d.get('nome')) +
+                '&body=' + encodeURIComponent(corpo);
+            document.getElementById('ok').textContent = 'Abrindo seu aplicativo de e-mail para enviar a mensagem.';
+        });
+    </script>
+</body>
+
+</html>

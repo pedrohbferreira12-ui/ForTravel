@@ -1,0 +1,319 @@
+header {
+    width: 100%;
+    margin: 0;
+    background-color: #4A6F99;
+}
+
+.cabecalho {
+    width: 100%;
+    margin: 0;
+    padding: 8px clamp(20px, 8vw, 100px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: static;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 18px;
+}
+
+nav a {
+    font-size: clamp(18px, 2.5vw, 34px);
+    color: #F3EEE8;
+    text-decoration: none;
+    font-style: italic;
+}
+
+nav a:hover {
+    color: #fff4b4;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Cormorant", serif;
+    margin: 0;
+}
+
+.titulo {
+    width: 100%;
+    margin-block-start: 0;
+    background-color: #6688ad;
+    min-height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-texto {
+    flex: 2;
+}
+
+.titulo-etiqueta {
+    margin: 0 0 10px;
+    color: #d9eafb;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-family: "Redaction 20", serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+@media (max-width: 650px) {
+    .titulo {
+        min-height: 190px;
+        padding: 30px 20px;
+    }
+}
+
+.conteudo {
+    width: 100%;
+    margin: 0;
+    padding: 0 max(20px, calc((100% - 30cm) / 2 + 20px)) 30px;
+    box-sizing: border-box;
+    background-color: #7e9dbc;
+}
+
+.conteudo p {
+    text-align: justify;
+    font-size: 14px;
+    margin: 0;
+    color: #1b2b3a;
+}
+
+.info-rodape {
+    display: inline-table;
+}
+
+.titulo-links-rodape {
+    font-weight: bold;
+    color: #F3EEE8;
+    font-size: 18px;
+    margin: 0 0 0 40vw;
+}
+
+section a {
+    display: block;
+    color: #F3EEE8;
+    margin: 2em 0 2em 40vw;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section a:hover {
+    color: #fff4b4;
+}
+
+section p {
+    color: #F3EEE8;
+    margin: 1em 0 1em 5vw;
+}
+
+.fa-whatsapp {
+    font-size: 35px;
+    margin: 0 0 0 5vw;
+    color: #008000;
+}
+
+.email {
+    font-size: 35px;
+    color: #fff;
+    margin: 0 5vw;
+}
+
+.icone-localizacao {
+    font-size: 33px;
+    color: #fff;
+    margin: 0 5.2vw;
+}
+
+.frase-efeito {
+    font-size: 18px;
+    color: #F3EEE8;
+    font-style: italic;
+    text-align: center;
+}
+
+hr {
+    border: 0 !important;
+    border-top: 2px solid #393532 !important;
+    height: 0 !important;
+}
+
+.rodape {
+    display: inline-flex;
+    margin: 1em 0 0 0;
+}
+
+.rodape a {
+    color: #F3EEE8;
+    padding: 0 2px;
+    word-spacing: 2px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    font-size: 14px;
+    margin: 0 0 0 2vw;
+    color: #F3EEE8;
+    padding: 0 2px;
+}
+
+.fa-instagram {
+    position: absolute;
+    right: 5vh;
+    font-size: 35px;
+    color: #F3EEE8;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #1E2223;
+    padding: 2% 0 1% 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .imagemsimbolo {
+        width: 90px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .fundadores-conteudo {
+        gap: 20px;
+    }
+
+    .foto-fundadores {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer>section.info-rodape {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        box-sizing: border-box;
+        font-size: 15.6px;
+    }
+
+    footer>section.info-rodape:first-of-type {
+        margin-right: 2%;
+    }
+
+    footer>section.info-rodape:nth-of-type(2) {
+        margin-right: 0;
+    }
+
+    footer .info-rodape p {
+        overflow-wrap: anywhere;
+    }
+
+    .titulo-links-rodape {
+        font-size: 16px;
+    }
+
+    .email {
+        font-size: 25px;
+    }
+
+    .icone-localizacao {
+        font-size: 25px;
+    }
+
+    .fa-whatsapp {
+        font-size: 25px;
+    }
+
+    footer .frase-efeito {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer hr {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer .rodape {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 3px;
+        width: 100%;
+        margin: 1em 0 0;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    footer .copy {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .rodape a {
+        font-size: 12px;
+        padding: 0 2px;
+    }
+
+    footer .fa-instagram {
+        right: 8px;
+        bottom: 4px;
+        font-size: 25px;
+    }
+}
