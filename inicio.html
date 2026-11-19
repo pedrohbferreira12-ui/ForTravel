@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Planeje sua próxima viagem com a For Travel. Descubra destinos, roteiros personalizados e experiências feitas para você.">
+    <title>For Travel | Descubra o mundo do seu jeito</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+
+            <a href="./inicio.html">
+                <h1><img src="./img/simbolo2_sem_fundo.png" alt="For Travel - início" class="imagemsimbolo"></h1>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li>
+                        <a href="./inicio.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="./sobre.html">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="./parceiros.html">Parceiros</a>
+                    </li>
+                    <li>
+                        <a href="./contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-conteudo">
+                <p class="eyebrow">Sua próxima história começa aqui</p>
+                <h2>O mundo espera por você.</h2>
+                <p class="hero-descricao">A gente cuida dos detalhes para você viver cada viagem do seu jeito.</p>
+                <a class="botao botao-claro" href="#buscar-viagem">Buscar viagens <span
+                        aria-hidden="true">→</span></a>
+            </div>
+            <a class="hero-credito" href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Imagem
+                ilustrativa</a>
+        </section>
+
+        <section class="busca-viagem" id="buscar-viagem" aria-labelledby="titulo-busca">
+            <div class="busca-cabecalho">
+                <p class="eyebrow">Encontre sua próxima viagem</p>
+                <h2 id="titulo-busca">Para onde você quer ir?</h2>
+                <p>Escolha um destino e conte quando pretende viajar. A gente ajuda com os próximos detalhes.</p>
+            </div>
+
+            <form class="form-busca" id="form-busca">
+                <div class="campo-busca campo-destino">
+                    <label for="destino">Destino</label>
+                    <select id="destino" name="destino">
+                        <option value="todos">Todos os destinos</option>
+                        <option value="maragogi">Maragogi, Brasil</option>
+                        <option value="paris">Paris, França</option>
+                        <option value="machu-picchu">Machu Picchu, Peru</option>
+                    </select>
+                </div>
+                <div class="campo-busca">
+                    <label for="origem">Saindo de</label>
+                    <input id="origem" name="origem" type="text" placeholder="Cidade ou aeroporto">
+                </div>
+                <div class="campo-busca">
+                    <label for="ida">Data de ida</label>
+                    <input id="ida" name="ida" type="date">
+                </div>
+                <div class="campo-busca">
+                    <label for="volta">Data de volta</label>
+                    <input id="volta" name="volta" type="date">
+                </div>
+                <div class="campo-busca campo-passageiros">
+                    <label for="passageiros">Passageiros</label>
+                    <select id="passageiros" name="passageiros">
+                        <option value="1">1 passageiro</option>
+                        <option value="2" selected>2 passageiros</option>
+                        <option value="3">3 passageiros</option>
+                        <option value="4">4 passageiros</option>
+                        <option value="5">5 ou mais</option>
+                    </select>
+                </div>
+                <button class="botao botao-azul botao-busca" type="submit">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar viagens
+                </button>
+            </form>
+            <p class="busca-ajuda">A busca filtra o destino. Datas, cidade de saída e passageiros serão incluídos na sua consulta pelo WhatsApp.</p>
+        </section>
+
+        <section class="resultados" aria-labelledby="titulo-resultados">
+            <div class="secao-cabecalho">
+                <div>
+                    <p class="eyebrow">Opções para sua próxima aventura</p>
+                    <h2 id="titulo-resultados">Destinos em destaque</h2>
+                </div>
+                <p class="resultado-contagem" id="resultado-contagem" aria-live="polite">3 destinos</p>
+            </div>
+
+            <div class="destinos-grade" id="lista-destinos">
+                <article class="destino-card" data-destino="">
+                    <div class="" role="" aria-label=""></div>
+                    <div class="destino-detalhes">
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
+                        <h3></h3>
+                        <p class="destino-descricao"></p>
+                        <a class="link-consulta" data-consulta="maragogi" href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Maragogi" target="_blank" rel="noopener noreferrer">
+                            Consultar viagem <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="destino-card" data-destino="">
+                    <div class="" role="" aria-label=""></div>
+                    <div class="destino-detalhes">
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
+                        <h3></h3>
+                        <p class="destino-descricao"></p>
+                        <a class="link-consulta" data-consulta="paris" href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Paris" target="_blank" rel="noopener noreferrer">
+                            Consultar viagem <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="destino-card" data-destino="machu-picchu">
+                    <div class="" role="" aria-label=""></div>
+                    <div class="destino-detalhes">
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
+                        <h3></h3>
+                        <p class="destino-descricao"></p>
+                        <a class="link-consulta" data-consulta="machu-picchu" href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Machu%20Picchu" target="_blank" rel="noopener noreferrer">
+                            Consultar viagem <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <p class="sem-resultados" id="sem-resultados" hidden>Não encontramos esse destino nas opções em destaque. Tente selecionar outro.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="info-rodape">
+            <h3 class="titulo-links-rodape">Links</h3>
+            <a href="./inicio.html" class="a-rodape">Início</a>
+            <a href="./parceiros.html" class="a-rodape">Parceiros</a>
+            <a href="./contato.html" class="a-rodape">Contato</a>
+            <a href="./sobre.html" class="a-rodape">Sobre</a>
+        </section>
+
+        <section class="info-rodape">
+            <h3 class="titulo-links-rodape">Entre em contato</h3>
+            <a href="https://wa.me/5511981765432">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                (11) 98176-5432
+            </a>
+            <a href="mailto:for.travel.2021.04@gmail.com">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                for.travel.2021.04@gmail.com
+            </a>
+            <p><i class="fa-solid fa-location-dot icone-localizacao" aria-hidden="true"></i> Av. da Liberdade, 701 - Conj 155 - Liberdade</p>
+        </section>
+
+        <p class="frase-efeito">Descubra o Mundo do Seu Jeito!</p>
+
+        <hr>
+
+        <div class="rodape">
+            <p class="copy">&#x00A9;2026 For Travel - Direitos Reservados |</p>
+            <a href="./privacidade.html">Privacidade</a>
+        </div>
+
+        <a href="https://www.instagram.com/for__travel__/" aria-label="Instagram da For Travel">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </footer>
+
+    <script src="./inicio.js" defer></script>
+</body>
+
+</html>

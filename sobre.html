@@ -15,11 +15,11 @@
     <header>
         <div class="cabecalho">
 
-            <a href="./inicio.html">
-                <h1><img src="./img/simbolo2_sem_fundo.png" alt="simbolo" class="imagemsimbolo"></h1>
+            <a href="./inicio.html" aria-label="For Travel - início">
+                <h1><img src="./img/simbolo2_sem_fundo.png" alt="" class="imagemsimbolo"></h1>
             </a>
 
-            <nav>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li>
                         <a href="./inicio.html">Início</a>
@@ -41,6 +41,7 @@
     <main>
 
         <section class="historia">
+
             <h2>Nossa História</h2>
 
             <p class="paragrafo-historia">Tudo começou com quatro primas e uma tradição que
@@ -56,40 +57,29 @@
         </section>
 
         <section class="missao">
-
-            <h2 class="titulo-missao">Nossa Missão</h2>
-
-            <h3 class="sub-titulo-missao">Descubra o Mundo do Seu Jeito!</h3>
-
-            <p class="paragrafo-missao"> Nossa
-                missão é transformar deslocamentos
-                em momentos significativos, com
-                suporte do início ao fim. Proporcionar experiências de viagens
-                seguras, personalizadas e memoráveis,
-                conectando pessoas aos destinos com
-                cuidado, confiança e serviço de
-                excelência em cada jornada.
-            </p>
-
-            <p class="paragrafo-missao">Ser a agência de viagens de referência
-                em roteiros inteligentes e sustentáveis,
-                inspirando descobertas que transformam
-                jornadas e criam memórias duradouras.
-                Buscamos inovar no planejamento de
-                viagens, oferecendo soluções que
-                conectam culturas, pessoas e novas
-                experiências com responsabilidade e
-                qualidade.
-            </p>
-
+            <div class="etiqueta-missao">
+                <p class="sub-titulo-missao">Descubra o Mundo do Seu Jeito!</p>
+                <h2 class="titulo-missao">Nossa Missão</h2>
+            </div>
+            <div class="missao-conteudo">
+                <p class="paragrafo-missao">
+                    Nossa missão é transformar deslocamentos em momentos significativos, com suporte do início ao fim.
+                    Proporcionamos experiências de viagem seguras, personalizadas e memoráveis, conectando pessoas aos
+                    destinos com cuidado, confiança e excelência em cada jornada.
+                </p>
+                <p class="paragrafo-missao">
+                    Queremos ser referência em roteiros inteligentes e sustentáveis, inspirando descobertas que
+                    transformam jornadas e criam memórias duradouras. Buscamos inovar no planejamento de viagens,
+                    conectando culturas, pessoas e novas experiências com responsabilidade e qualidade.
+                </p>
+            </div>
         </section>
 
-
         <section class="fundadores">
-            <h2>Fundadores</h2>
+            <h2>Fundadoras</h2>
 
             <div class="imagem-fundadores">
-                <img src="./img/Fundadores.jpg" alt="Fundadoras" class="foto-fundadores">
+                <img src="./img/Fundadores.jpg" alt="Foto das fundadoras da For Travel" class="foto-fundadores">
             </div>
 
             <div class="fundadores-conteudo">
@@ -116,19 +106,42 @@
         </section>
 
         <section class="localizacao">
-            <h2>Localização</h2>
-
-            <div class="paragrafo-localizacao">
-                <p>Estamos localizados na:</p>
-                <p>Av. da Liberdade, 701 - Conj 155 - Liberdade</p>
+            <div class="localizacao-cabecalho">
+                <p class="etiqueta-localizacao">Estamos por aqui</p>
+                <h2>Venha nos visitar</h2>
+                <p class="intro-localizacao">Nossa equipe está pronta para ajudar você a planejar sua próxima viagem.
+                </p>
             </div>
 
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2638270182783!2d-46.639857223873975!3d-23.55896627880144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a5f9f306ad%3A0xdc8935b5a411dcc6!2sAv.%20da%20Liberdade%2C%20701%20-%20Conj%20155%20-%20Liberdade%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001503-001!5e0!3m2!1spt-BR!2sbr!4v1791543024662!5m2!1spt-BR!2sbr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
+            <div class="localizacao-conteudo">
+                <div class="cartao-endereco">
+                    <span class="icone-endereco" aria-hidden="true">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <div class="texto-endereco">
+                        <h3>For Travel</h3>
+                        <p class="endereco-legenda">Nosso escritório</p>
+                        <address>
+                            Av. da Liberdade, 701<br>
+                            Conj. 155 - Liberdade<br>
+                            São Paulo - SP
+                        </address>
+                        <a class="link-mapa"
+                            href="https://www.google.com/maps/search/?api=1&query=Av.+da+Liberdade,+701,+Conj.+155,+Liberdade,+S%C3%A3o+Paulo"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver rota no Google Maps <i class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2638270182783!2d-46.639857223873975!3d-23.55896627880144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a5f9f306ad%3A0xdc8935b5a411dcc6!2sAv.%20da%20Liberdade%2C%20701%20-%20Conj%20155%20-%20Liberdade%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001503-001!5e0!3m2!1spt-BR!2sbr!4v1791543024662!5m2!1spt-BR!2sbr"
+                        title="Mapa da localização da For Travel na Avenida da Liberdade, em São Paulo" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </section>
 
@@ -144,12 +157,18 @@
         </section>
 
         <section class="info-rodape">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>(11) 98176-5432</p>
-            <span class="email">&#x2709;</span>
-            <p>for.travel.2021.04@gmail.com</p>
-            <i class="fa-solid fa-location-dot icone-localizacao"></i>
-            <p>Av. da Liberdade, 701 - Conj 155 - Liberdade</p>
+            <h3 class="titulo-links-rodape">Entre em contato</h3>
+            <a href="https://wa.me/5511981765432">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span>(11) 98176-5432</span>
+            </a>
+            <a href="mailto:for.travel.2021.04@gmail.com">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                <span>for.travel.2021.04@gmail.com</span>
+            </a>
+            <p><i class="fa-solid fa-location-dot icone-localizacao" aria-hidden="true"></i>
+                <span>Av. da Liberdade, 701 - Conj 155 - Liberdade</span>
+            </p>
         </section>
 
         <p class="frase-efeito">Descubra o Mundo do Seu Jeito!</p>
@@ -161,7 +180,7 @@
             <a href="./privacidade.html">Privacidade</a>
         </div>
 
-        <a href="https://www.instagram.com/for__travel__/">
+        <a class="link-instagram" href="https://www.instagram.com/for__travel__/" aria-label="Instagram da For Travel">
             <i class="fa-brands fa-instagram"></i>
         </a>
     </footer>
