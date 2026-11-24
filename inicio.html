@@ -23,6 +23,7 @@
 
             <nav aria-label="Navegação principal">
                 <ul>
+                    
                     <li>
                         <a href="./inicio.html">Início</a>
                     </li>
@@ -35,6 +36,9 @@
                     <li>
                         <a href="./contato.html">Contato</a>
                     </li>
+                    <a href="./carrinho.html" aria-label="Carrinho de compras">
+                        <img src="./img/carrinho_branco.png" alt="Carrinho de compras" class="icone-carrinho-branco">
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -71,15 +75,16 @@
                 </div>
                 <div class="campo-busca">
                     <label for="origem">Saindo de</label>
-                    <input id="origem" name="origem" type="text" placeholder="Cidade ou aeroporto">
+                    <input id="origem" name="origem" type="text" placeholder="Cidade ou aeroporto"
+                        autocomplete="address-level2" required>
                 </div>
                 <div class="campo-busca">
                     <label for="ida">Data de ida</label>
-                    <input id="ida" name="ida" type="date">
+                    <input id="ida" name="ida" type="date" required>
                 </div>
                 <div class="campo-busca">
                     <label for="volta">Data de volta</label>
-                    <input id="volta" name="volta" type="date">
+                    <input id="volta" name="volta" type="date" required>
                 </div>
                 <div class="campo-busca campo-passageiros">
                     <label for="passageiros">Passageiros</label>
@@ -109,45 +114,67 @@
             </div>
 
             <div class="destinos-grade" id="lista-destinos">
-                <article class="destino-card" data-destino="">
-                    <div class="" role="" aria-label=""></div>
+
+                <article class="destino-card" data-destino="maragogi">
+                    <div class="destino-foto destino-maragogi" role="img" aria-label="Paisagem de Maragogi"></div>
                     <div class="destino-detalhes">
-                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
-                        <h3></h3>
-                        <p class="destino-descricao"></p>
+
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Maragogi,
+                            Brasil</p>
+                        <h3>Maragogi</h3>
+                        <p class="destino-descricao">Piscinas naturais, praias de águas claras e dias tranquilos no
+                            litoral de Alagoas.</p>
                         <a class="link-consulta" data-consulta="maragogi"
                             href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Maragogi"
                             target="_blank" rel="noopener noreferrer">
                             Consultar viagem <span aria-hidden="true">→</span>
                         </a>
+                        <button type="button" class="btn-adicionar" data-id="maragogi-01"
+                            data-nome="Pacote Maragogi - 7 dias" data-preco="5990" data-imagem="./img/carrinho.png">
+                            <img src="./img/carrinho.png" alt="carrinho" class="icone-carrinho">
+                        </button>
                     </div>
                 </article>
 
-                <article class="destino-card" data-destino="">
-                    <div class="" role="" aria-label=""></div>
+                <article class="destino-card" data-destino="paris">
+                    <div class="destino-foto destino-paris" role="img" aria-label="Paisagem de Paris"></div>
                     <div class="destino-detalhes">
-                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
-                        <h3></h3>
-                        <p class="destino-descricao"></p>
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Paris,
+                            França</p>
+                        <h3>Paris</h3>
+                        <p class="destino-descricao">Museus, gastronomia e passeios inesquecíveis pela Cidade Luz.</p>
                         <a class="link-consulta" data-consulta="paris"
                             href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Paris"
                             target="_blank" rel="noopener noreferrer">
                             Consultar viagem <span aria-hidden="true">→</span>
                         </a>
+                        <button type="button" class="btn-adicionar" data-id="paris-01" data-nome="Pacote Paris - 7 dias"
+                            data-preco="5990" data-imagem="./img/carrinho.png">
+                            <img src="./img/carrinho.png" alt="carrinho"
+                                class="icone-carrinho">
+                        </button>
                     </div>
                 </article>
 
                 <article class="destino-card" data-destino="machu-picchu">
-                    <div class="" role="" aria-label=""></div>
+                    <div class="destino-foto destino-machu-picchu" role="img" aria-label="Paisagem de Machu Picchu">
+                    </div>
                     <div class="destino-detalhes">
-                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></p>
-                        <h3></h3>
-                        <p class="destino-descricao"></p>
+                        <p class="destino-regiao"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Machu
+                            Picchu, Peru</p>
+                        <h3>Machu Picchu</h3>
+                        <p class="destino-descricao">Uma viagem histórica pelos Andes e pela cultura milenar dos Incas.
+                        </p>
                         <a class="link-consulta" data-consulta="machu-picchu"
                             href="https://wa.me/5511981765432?text=Tenho%20interesse%20em%20uma%20viagem%20para%20Machu%20Picchu"
                             target="_blank" rel="noopener noreferrer">
                             Consultar viagem <span aria-hidden="true">→</span>
                         </a>
+                        <button type="button" class="btn-adicionar" data-id="machu-picchu-01"
+                            data-nome="Pacote Machu Picchu - 7 dias" data-preco="5990" data-imagem="./img/carrinho.png">
+                            <img src="./img/carrinho.png" alt="carrinho"
+                                class="icone-carrinho">
+                        </button>
                     </div>
                 </article>
             </div>
@@ -194,6 +221,7 @@
     </footer>
 
     <script src="./inicio.js" defer></script>
+    <script src="carrinho.js"></script>
 </body>
 
 </html>

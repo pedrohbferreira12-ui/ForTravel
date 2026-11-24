@@ -14,6 +14,14 @@ header {
     justify-content: space-between;
 }
 
+.imagemsimbolo {
+    width: 118px;
+    max-height: 76px;
+    display: block;
+    object-fit: contain;
+}
+
+
 nav {
     position: static;
 }
@@ -55,6 +63,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .titulo-texto {
@@ -89,125 +98,33 @@ body {
 .conteudo {
     width: 100%;
     margin: 0;
-    padding: 0 max(20px, calc((100% - 30cm) / 2 + 20px)) 30px;
+    padding: 20px max(20px, calc((100% - 30cm) / 2 + 20px)) 30px;
     box-sizing: border-box;
-    background-color: #7e9dbc;
+    background-color: #F3EEE8;
+    right: max(7vw, calc((100vw - 1200px) / 2));
 }
 
 .conteudo p {
     text-align: justify;
     font-size: 14px;
-    margin: 0;
+    margin: 0 0 1em;
     color: #1b2b3a;
 }
 
-.info-rodape {
-    display: inline-table;
+.conteudo .artigo-titulo {
+    margin: 1.5em 0 0.75em;
+    font-weight: 700;
 }
 
-.titulo-links-rodape {
-    font-weight: bold;
-    color: #F3EEE8;
-    font-size: 18px;
-    margin: 0 0 0 40vw;
+.conteudo .artigo-titulo:first-child {
+    margin-top: 0;
 }
 
-section a {
-    display: block;
-    color: #F3EEE8;
-    margin: 2em 0 2em 40vw;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-section a:hover {
-    color: #fff4b4;
-}
-
-section p {
-    color: #F3EEE8;
-    margin: 1em 0 1em 5vw;
-}
-
-.fa-whatsapp {
-    font-size: 35px;
-    margin: 0 0 0 5vw;
-    color: #008000;
-}
-
-.email {
-    font-size: 35px;
-    color: #fff;
-    margin: 0 5vw;
-}
-
-.icone-localizacao {
-    font-size: 33px;
-    color: #fff;
-    margin: 0 5.2vw;
-}
-
-.frase-efeito {
-    font-size: 18px;
-    color: #F3EEE8;
-    font-style: italic;
-    text-align: center;
-}
-
-hr {
-    border: 0 !important;
-    border-top: 2px solid #393532 !important;
-    height: 0 !important;
-}
-
-.rodape {
-    display: inline-flex;
-    margin: 1em 0 0 0;
-}
-
-.rodape a {
-    color: #F3EEE8;
-    padding: 0 2px;
-    word-spacing: 2px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.rodape a:hover {
-    text-decoration: underline;
-}
-
-.copy {
-    font-size: 14px;
-    margin: 0 0 0 2vw;
-    color: #F3EEE8;
-    padding: 0 2px;
-}
-
-.fa-instagram {
-    position: absolute;
-    right: 5vh;
-    font-size: 35px;
-    color: #F3EEE8;
-}
-
-footer {
-    width: 100%;
-    position: relative;
-    background-color: #1E2223;
-    padding: 2% 0 1% 0;
-}
-
-@media screen and (max-width: 600px) {
-
+@media (max-width: 650px) {
     .cabecalho {
         flex-direction: column;
         gap: 8px;
         padding: 10px 12px;
-    }
-
-    .imagemsimbolo {
-        width: 90px;
     }
 
     nav ul {
@@ -224,96 +141,112 @@ footer {
     nav a {
         font-size: 17px;
     }
+}
 
-    .fundadores-conteudo {
-        gap: 20px;
-    }
+footer {
+    position: relative;
+    width: 100%;
+    padding: 42px max(7vw, calc((100vw - 1200px) / 2)) 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(150px, 0.7fr) minmax(0, 1.3fr);
+    gap: 24px 36px;
+    background: #1E2223;
+    color: #F3EEE8;
+}
 
-    .foto-fundadores {
-        width: 100%;
-    }
+footer .info-rodape {
+    min-width: 0;
+}
 
-    .mapa {
-        width: 100%;
-    }
+footer .titulo-links-rodape {
+    margin: 0 0 16px;
+    color: #F3EEE8;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
-    footer {
-        width: 100%;
-        box-sizing: border-box;
-    }
+footer .info-rodape > a {
+    width: fit-content;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #F3EEE8;
+    line-height: 1.6;
+    text-decoration: none;
+}
 
-    footer>section.info-rodape {
-        display: inline-block;
-        vertical-align: top;
-        width: 48%;
-        box-sizing: border-box;
-        font-size: 15.6px;
-    }
+footer .info-rodape > a:hover,
+footer .info-rodape > a:focus-visible,
+footer .rodape a:hover,
+footer .rodape a:focus-visible {
+    color: #fff4b4;
+}
 
-    footer>section.info-rodape:first-of-type {
-        margin-right: 2%;
-    }
+footer .info-rodape > p {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #F3EEE8;
+    line-height: 1.6;
+}
 
-    footer>section.info-rodape:nth-of-type(2) {
-        margin-right: 0;
-    }
+footer .info-rodape .fa-whatsapp,
+footer .info-rodape .fa-regular,
+footer .info-rodape .icone-localizacao {
+    flex: 0 0 20px;
+    margin-top: 3px;
+    color: #F3EEE8;
+    font-size: 1rem;
+    text-align: center;
+}
 
-    footer .info-rodape p {
-        overflow-wrap: anywhere;
-    }
+footer .frase-efeito {
+    grid-column: 1 / -1;
+    margin: 8px 0 0;
+    color: #F3EEE8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    text-align: center;
+}
 
-    .titulo-links-rodape {
-        font-size: 16px;
-    }
+footer hr {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #52585a;
+}
 
-    .email {
-        font-size: 25px;
-    }
+footer .rodape {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
-    .icone-localizacao {
-        font-size: 25px;
-    }
+footer .rodape a,
+footer .copy {
+    margin: 0;
+    padding: 0;
+    color: #F3EEE8;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
 
-    .fa-whatsapp {
-        font-size: 25px;
-    }
-
-    footer .frase-efeito {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    footer hr {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    footer .rodape {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 3px;
-        width: 100%;
-        margin: 1em 0 0;
-        box-sizing: border-box;
-        white-space: nowrap;
-    }
-
-    footer .copy {
-        font-size: 12px;
-        margin: 0;
-        padding: 0;
-    }
-
-    footer .rodape a {
-        font-size: 12px;
-        padding: 0 2px;
-    }
-
-    footer .fa-instagram {
-        right: 8px;
-        bottom: 4px;
-        font-size: 25px;
-    }
+footer > a {
+    position: absolute;
+    right: max(7vw, calc((100vw - 1200px) / 2));
+    bottom: 18px;
+    color: #F3EEE8;
+    font-size: 1.5rem;
+    line-height: 1;
 }
