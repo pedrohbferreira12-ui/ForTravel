@@ -93,7 +93,7 @@ header nav a:focus-visible {
 }
 
 .item img {
-    width: 80px;
+    width: 60px;
     height: 64px;
     object-fit: cover;
     border-radius: 6px;
