@@ -397,6 +397,10 @@ button.btn-adicionar {
     object-fit: contain;
 }
 
+.feedback-adicionado {
+    color: #4A6F99;
+}
+
 .icone-carrinho:hover {
     padding: 2px;
     border-radius: 4px;

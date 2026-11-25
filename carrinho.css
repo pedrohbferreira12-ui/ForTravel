@@ -166,7 +166,23 @@ header nav a:focus-visible {
 
 .btn-limpar { background: transparent; color: #a33; border: 1px solid #a33; }
 
-
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-overlay[hidden] {
+    display: none;
+  }
+  .popup-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+  }
 
 footer {
     position: relative;

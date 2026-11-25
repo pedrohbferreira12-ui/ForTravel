@@ -85,8 +85,12 @@ document.addEventListener("click", (e) => {
             preco: parseFloat(add.dataset.preco),
             imagem: add.dataset.imagem,
         });
-        add.textContent = "Adicionado ✓";
-        setTimeout(() => (add.textContent = "Adicionar ao carrinho"), 1200);
+        add.querySelector(".feedback-adicionado")?.remove();
+        const feedback = document.createElement("span");
+        feedback.className = "feedback-adicionado";
+        feedback.textContent = "Adicionado ✓";
+        add.append(feedback);
+        setTimeout(() => feedback.remove(), 1200);
         return;
     }
 
@@ -112,7 +116,19 @@ document.getElementById("btn-finalizar")?.addEventListener("click", () => {
     const linhas = carrinho.map((i) => `• ${i.qtd}x ${i.nome} - ${moeda(i.preco * i.qtd)}`);
     const total = moeda(carrinho.reduce((s, i) => s + i.preco * i.qtd, 0));
     const msg = `Olá! Gostaria de reservar:\n${linhas.join("\n")}\nTotal: ${total}`;
-    window.open(`[wa.me](https://wa.me/5511981765432?text=${encodeURIComponent(msg)})`, "_blank");
+    const popup = document.getElementById("popup");
+    if (popup) popup.hidden = false;
 });
 
 renderizar();
+
+const popup = document.getElementById("popup");
+const fecharBtn = document.getElementById("fechar-popup");
+
+fecharBtn?.addEventListener("click", () => {
+    if (popup) popup.hidden = true;
+});
+
+new window.VLibras.Widget(
+    'https://vlibras.gov.br/app'
+);
